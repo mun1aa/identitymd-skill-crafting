@@ -77,3 +77,14 @@ the same rules. Paths under `.imd/reads/` are where a worker finds its pinned in
 Open an issue or a pull request on this repository with your skill folder and a sentence on why no
 existing skill covers it. A skill copied from someone else must carry `upstream`, `upstreamCommit`
 (a full 40-character commit) and `licence`, with the licence file beside it.
+
+## Proposed skills
+
+These packages are proposals, not claims of admission to the live catalog.
+
+| Package | Purpose | Validation |
+| --- | --- | --- |
+| [`contract-state-diff`](contract-state-diff/SKILL.md) | Compare selected EVM fields across pinned blocks or a saved baseline, preserving unknown reads and typed evidence. Runnable, class 2. | `node check-skill.mjs contract-state-diff` and `node --test contract-state-diff/tests/*.test.mjs` |
+
+The package's [reference](contract-state-diff/REFERENCE.md) describes inputs, output, failure
+semantics and how it differs from entry-point analysis and single-call oracle comparisons.
